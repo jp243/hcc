@@ -22,7 +22,7 @@ if (
 }
 
 // Configure your email
-$to = "your_email@example.com";  // 👈 replace with your real email address
+$to = "jaypebayonon@gmail.com";  // 👈 replace with your real email address
 $subject = "✈️ New Flight Booking from " . $data['fullName'];
 
 // Email content
@@ -51,3 +51,4 @@ if (mail($to, $subject, $message, $headers)) {
     echo json_encode(["success" => false, "message" => "Failed to send email"]);
 }
 ?>
+
