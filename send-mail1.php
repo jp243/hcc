@@ -37,12 +37,12 @@ try {
     $mail->Host       = 'smtp.gmail.com';       // or your mail server (e.g. mail.yourdomain.com)
     $mail->SMTPAuth   = true;
     $mail->Username   = 'jaypebayonon@gmail.com'; // your SMTP username
-    $mail->Password   = '@Servant7752';    // Gmail App Password or SMTP password
+    $mail->Password   = 'ddct igpb zysc jhmy';    // Gmail App Password or SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // 'tls' encryption
     $mail->Port       = 587;
 
     // Recipients
-    $mail->setFrom('your_email@gmail.com', 'Flight Booking App');
+    $mail->setFrom('jaypebayonon@gmail.com', 'Flight Booking App');
     $mail->addAddress('jaypebayonon@gmail.com', 'Admin'); // where bookings are sent
     $mail->addReplyTo($data['email'], $data['fullName']);
 
@@ -71,4 +71,5 @@ try {
     echo json_encode(["success" => false, "message" => "Mailer Error: {$mail->ErrorInfo}"]);
 }
 ?>
+
 
